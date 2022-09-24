@@ -14,10 +14,11 @@ choiceBtns.forEach(button => button.addEventListener("click", ()=> {
     computerTurn();
     playerText.textContent = 'Player: ${player}';
     computerText.textContent = 'Computer: ${computer}';
-    result.textContent = checkWinner();
+    resultText.textContent = checkWinner();
 }));
 
 function computerTurn(){
+
     const randNum = Math.floor(Math.random()*3) +1;
     switch(randNum){
         case 1:
